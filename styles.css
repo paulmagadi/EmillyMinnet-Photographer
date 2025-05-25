@@ -12,6 +12,7 @@
 
 body {
     background-color: rgb(230, 230, 230);
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -28,10 +29,10 @@ header {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.8rem;
     color: var(--primary-color);
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Rowdies", sans-serif;
 }
 
 .logo span {
@@ -51,7 +52,7 @@ nav ul li {
     margin-left: 1em;
     font-weight: 600;
     color: rgb(25, 25, 25);
-    font-family: "PT Serif", serif;
+    font-family: "Jost", sans-serif;
     position: relative;
     padding-bottom: 2px;
 }
@@ -85,7 +86,7 @@ header .contact-btn button {
     color: white;
     font-weight: 600;
     cursor: pointer;
-    font-family: "PT Serif", serif;
+    font-family: "Jost", sans-serif;
 }
 
 header .contact-btn button:hover {
@@ -110,7 +111,6 @@ header .menu-toggler {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "PT Serif", serif;
     padding: 1em 2em;
     position: relative;
 }
@@ -120,9 +120,9 @@ header .menu-toggler {
     font-size: 1.8rem;
 }
 
-.introduction .name span {
+.introduction .name {
     color: var(--primary-color);
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Rowdies", sans-serif;
     font-size: 2.1rem;
 }
 
@@ -130,12 +130,14 @@ header .menu-toggler {
     font-weight: 600;
     font-size: 1.6rem;
     margin-bottom: 1em;
+    font-family: "Jost", sans-serif;
 }
 
 .introduction .description {
     color: rgb(25, 25, 25);
     line-height: 1.5rem;
-    font-family: "Philosopher", sans-serif;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
 }
 
 .button-group {
@@ -145,7 +147,7 @@ header .menu-toggler {
 .button-group button {
     margin-right: 1em;
     cursor: pointer;
-    font-family: "PT Serif", serif;
+    font-family: "Jost", sans-serif;
 }
 
 .button-group button:hover {
@@ -250,17 +252,183 @@ header .menu-toggler {
     transition: .5s ease-in-out;
 }
 
-
-
-
-/* .hero-section {
-    background-color: rgba(172, 255, 47, 0.475);
-
-    background-color: rgba(172, 255, 134, 0.475);
-
-    background-color: rgba(111, 224, 198, 0.2);
-    background-color: rgba(117, 236, 187, 0.2);
+/* .services-section {
 } */
+
+.heading {
+    padding: 0 1em;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: "Rowdies", sans-serif;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-container .service {
+    width: 48%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    background-color: rgb(230, 230, 230);
+    background-color: rgb(212, 212, 212);
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.service-description h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: "Jost", sans-serif;
+}
+
+.service-description small {
+    margin: 1.5em 0;
+    color: var(--primary-color);
+    font-family: cursive;
+}
+
+.service-description p {
+    line-height: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-image {
+    /* width: 45%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+
+
+
+.why-me-section {
+    background-color: var(--primary-color);
+    /* background-color: #093947; */
+    color: rgb(242, 242, 242);
+    padding: 1em 2em;
+    margin: 0 10px;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    font-family: "Comic Neue", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.why-me-section>div:nth-child(1) {
+    width: 70%;
+    flex: 1 auto;
+    margin-bottom: 2rem;
+}
+
+.why-me-section>div:nth-child(2) {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.why-me-section>div:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(236, 37, 100);
+    transform: rotate(100deg);
+    z-index: -1;
+}
+
+.why-me-section>div:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transform: rotate(-100deg);
+    z-index: -2;
+}
+
+.why-me-section>div:nth-child(2) img {
+    width: 80%;
+}
+
+.why-me-section p {
+    line-height: 1.8rem;
+}
+
+
+
+footer {
+    padding: 3em 2em;
+    margin: 0 10px;
+    font-family: "Jost", sans-serif;
+    background-color: rgb(230, 230, 230);
+    border-radius: 8px 8px 0 0;
+}
+
+.footer-links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .5em 0;
+}
+
+.footer-links p {
+    color: var(--primary-color);
+    padding: .5em 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1em 0;
+    border: none;
+}
+
+footer .foot {
+    text-align: center;
+}
 
 @media (max-width: 1100px) {
     .profile-image img {
