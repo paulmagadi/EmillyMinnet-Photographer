@@ -28,8 +28,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 12px 2em;
     background-color: rgb(212, 212, 212);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .logo {
@@ -80,6 +86,16 @@ nav ul li:hover::after {
     to {
         transform: scaleX(1);
     }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header .whatsapp-btn {
+    font-size: .9rem;
+    font-weight: normal;
 }
 
 .primary-btn {
@@ -256,7 +272,7 @@ header .menu-toggler {
 }
 
 .services-section {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .heading {
@@ -339,14 +355,13 @@ header .menu-toggler {
     background-color: var(--primary-color);
     color: rgb(242, 242, 242);
     padding: 1em 2em;
-    margin: 0 10px;
     margin-bottom: 2em;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-family: cursive;
+    font-family: "Jost", sans-serif;
 }
 
 .why-me-section>div:nth-child(1) {
@@ -396,10 +411,10 @@ header .menu-toggler {
 
 .gallery-section {
     background-color: var(--bg-color);
-    margin: 0 10px;
     border-radius: 8px;
     padding: 1em;
     font-family: "Jost", sans-serif;
+    margin: 2rem 0;
 }
 
 .gallery-container {
@@ -429,11 +444,10 @@ header .menu-toggler {
 .testimonials-section {
     background-color: var(--primary-color);
     color: rgb(242, 242, 242);
-    padding: 1em 2em;
-    margin: 0 10px;
-    margin-bottom: 2em;
+    padding: 1em 1em;
+    margin: 2rem 0;
     border-radius: 8px;
-    font-family: cursive;
+    font-family: "Jost", sans-serif;
 }
 
 .testimonials-section h2 {
@@ -445,7 +459,8 @@ header .menu-toggler {
 
 .testimonial-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
     gap: 1em;
 }
 
@@ -459,10 +474,10 @@ header .menu-toggler {
 
 .contact-section {
     background-color: var(--bg-color);
-    margin: 0 10px;
     padding: 2em;
     border-radius: 8px;
     font-family: "Jost", sans-serif;
+    margin: 2rem 0;
 }
 
 .contact-section h2 {
@@ -502,6 +517,7 @@ header .menu-toggler {
     transition: border-color 0.3s ease-in-out;
 
 }
+
 .contact-section form input:focus,
 .contact-section form textarea:focus {
     border-color: var(--primary-color);
@@ -539,6 +555,7 @@ header .menu-toggler {
     color: var(--primary-color);
     font-size: 1.5rem;
 }
+
 .social-icons-container a:hover {
     color: rgb(236, 37, 100);
     transition: color 0.3s ease-in-out;
@@ -547,7 +564,6 @@ header .menu-toggler {
 
 footer {
     padding: 3em 2em;
-    margin: 0 10px;
     font-family: "Jost", sans-serif;
     background-color: rgb(230, 230, 230);
     border-radius: 8px 8px 0 0;
@@ -671,6 +687,22 @@ footer .foot {
 }
 
 @media (max-width: 800px) {
+
+    .why-me-section {
+        flex-direction: column;
+        padding: 1em;
+        margin: 0 10px;
+
+    }
+
+    .why-me-section>div:nth-child(1) {
+        width: 100%;
+    }
+
+    .why-me-section>div:nth-child(2) {
+        width: 100%;
+    }
+
     .contact-container {
         flex-direction: column;
         align-items: center;
@@ -686,14 +718,15 @@ footer .foot {
     }
 
     footer {
-    padding: 3em 1em;
-}
+        padding: 3em 1em;
+    }
 }
 
 @media (max-width: 600px) {
     .services-container .service {
         width: 100%;
     }
+
 
 }
 
@@ -711,6 +744,7 @@ footer .foot {
         padding: 5px;
         margin: 3px;
     }
+
 
     .footer-links-container {
         justify-content: space-between;

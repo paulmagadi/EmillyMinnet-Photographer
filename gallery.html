@@ -4,60 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Kenny - Photographer</title>
+    <title>Emilly Minnet - Photographer</title>
+    <meta name="description" content="Explore the stunning photography collection of Emilly Minnet, featuring nature, portrait, urban, and travel photography.">
+    <meta name="keywords" content="photography, nature, portrait, urban, travel, gallery, Emilly Minnet">
+
+    <meta name="author" content="Emilly Minnet">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Emilly Minnet - Photographer">
+    <meta property="og:description" content="Explore the stunning photography collection of Emilly Minnet, featuring nature, portrait, urban, and travel photography.">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/gallery.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emilly Minnet - Photographer">
+    <meta name="twitter:description" content="Explore the stunning photography collection of Emilly Minnet, featuring nature, portrait, urban, and travel photography.">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+    <meta name="twitter:site" content="@emillyminnet">
+    <meta name="twitter:creator" content="@emillyminnet">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="your-google-site-verification-code">
+    <meta name="msvalidate.01" content="your-bing-site-verification-code">
+    <meta name="yandex-verification" content="your-yandex-site-verification-code">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Emilly Minnet - Photographer">
+    <meta name="application-name" content="Emilly Minnet - Photographer">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon_io/mstile-150x150.png">
+
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact_modal.css">
     <link rel="stylesheet" href="gallery.css">
 
-
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poetsen+One&family=Tangerine:wght@400;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <header>
             <div class="logo">
-                <a href="index.html"><i class="fa-solid fa-camera-retro"></i> Jenny</a>
+                Minnet
             </div>
             <nav>
                 <ul>
                     <a href="index.html">
                         <li>Home</li>
                     </a>
-                    <a href="index.html#about">
-                        <li>About</li>
-                    </a>
                     <a href="index.html#services">
                         <li>Services</li>
                     </a>
-                    <a href="gallery.html">
+                    <a href="index.html#gallery">
                         <li>Gallery</li>
                     </a>
-                    <button class="primary-btn lets-talk-btn" id="lets-talk-btn">Let's talk</button>
+                    <a href="index.html#testimonials">
+                        <li>Testimonials</li>
+                    </a>
+
+                    <a href="index.html#contact">
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </nav>
-            <div class="whatsapp-link">
-                <a href="https://wa.me/demo" target="_blank" rel="noopener noreferre" title="Lets talk on WhatsApp"><i
-                        class="fa-brands fa-whatsapp"></i></a>
+            <div class="whatsapp-btn">
+                <a href="" class="primary-btn">Whatsapp</a>
             </div>
             <div class="menu-toggler">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-        <div class="gallery-container">
+
+        <div class="colection-container">
             <h1>Photo Collection</h1>
 
             <!-- Filter Controls -->
@@ -67,7 +97,7 @@
                 <button class="filter-btn" data-filter="portrait">Portrait</button>
                 <button class="filter-btn" data-filter="urban">Urban</button>
                 <button class="filter-btn" data-filter="travel">Travel</button>
-                <button class="filter-btn" data-filter="Jenny">Jenny.</button>
+                <button class="filter-btn" data-filter="emilly">Emilly.</button>
             </div>
 
             <!-- Gallery Grid -->
@@ -88,7 +118,7 @@
                 <div class="footer-links">
                     <h4 class="links-header">Contacts</h4>
                     <p><i class="fa-solid fa-envelope"></i> jenny@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-flip"></i> +25470707071</p>
+                    <p><i class="fa-solid fa-phone"></i> +25470707071</p>
                     <p><i class="fa-brands fa-square-whatsapp"></i> +25470707071</a>
                     <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
                 </div>
@@ -102,13 +132,15 @@
                 <div class="footer-links">
                     <h4 class="links-header">Navigation</h4>
                     <a href="index.html">Home</a>
-                    <a href="#about">About me</a>
-                    <a href="#services">Sevices</a>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html#services">Sevices</a>
+                    <a href="index.html#testimonials">Testimonials</a>
+                    <a href="index.html#gallery">Gallery</a>
+                    <a href="index.html#contact">Contact</a>
                 </div>
                 <div class="footer-links">
                     <h4 class="links-header">Developer</h4>
-                    <small>You want such websites? <br> Talk to the developer <i class="fa-solid fa-arrow-down"></i></small>
+                    <small>You want such websites? <br> Talk to the developer <i
+                            class="fa-solid fa-arrow-down"></i></small>
                     <a href="https://paulmagadi.github.io">Profile</a>
                     <a href="">Instagram</a>
                     <a href="">Youtube</a>
@@ -116,7 +148,7 @@
             </div>
             <hr>
             <div class="foot">
-                <p>Copyright <i class="fa-regular fa-copyright"></i> 2025 - 
+                <p>Copyright <i class="fa-regular fa-copyright"></i> 2025 -
                     <script>document.write(new Date().getFullYear());</script> All Rights Reserved. <br> Designed and
                     Developed by <a href="https://paulmagadi.github.io" title="Visit Us">paulmagadi</a>
                 </p>
@@ -124,25 +156,7 @@
         </footer>
     </div>
 
-    <div class="contact-modal">
-        <div class="contact-modal-content">
-            <div class="contact-modal-header">
-                <h3>Contact me</h3>
-                <span class="close-contact-modal"><i class="fa-solid fa-xmark"></i></span>
-            </div>
-            <div class="contact-modal-body">
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="primary-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div id="toast" class="toast">Message sent successfully!</div>
 
-    <script src="universal.js"></script>
     <script src="gallery.js"></script>
 </body>
 
