@@ -687,6 +687,9 @@ footer .foot {
 }
 
 @media (max-width: 800px) {
+    .whatsapp-btn {
+        display: none;
+    }
 
     .why-me-section {
         flex-direction: column;
