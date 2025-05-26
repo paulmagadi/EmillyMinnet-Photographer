@@ -279,7 +279,7 @@ header .menu-toggler {
     gap: 1em;
     flex-wrap: wrap;
     margin-top: 1em;
-    background-color: rgb(212, 212, 212);
+    background-color: var(--bg-color);
 }
 
 .service-description {
@@ -342,11 +342,11 @@ header .menu-toggler {
     margin: 0 10px;
     margin-bottom: 2em;
     border-radius: 8px;
-    font-family: "Comic Neue", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-family: cursive;
 }
 
 .why-me-section>div:nth-child(1) {
@@ -395,7 +395,7 @@ header .menu-toggler {
 }
 
 .gallery-section {
-    background-color: rgb(212, 212, 212);
+    background-color: var(--bg-color);
     margin: 0 10px;
     border-radius: 8px;
     padding: 1em;
@@ -433,7 +433,7 @@ header .menu-toggler {
     margin: 0 10px;
     margin-bottom: 2em;
     border-radius: 8px;
-    font-family: "Comic Neue", cursive;
+    font-family: cursive;
 }
 
 .testimonials-section h2 {
@@ -458,8 +458,9 @@ header .menu-toggler {
 }
 
 .contact-section {
-    background-color: rgb(230, 230, 230);
+    background-color: var(--bg-color);
     margin: 0 10px;
+    padding: 2em;
     border-radius: 8px;
     font-family: "Jost", sans-serif;
 }
@@ -490,7 +491,7 @@ header .menu-toggler {
 .contact-section form input,
 .contact-section form textarea {
     padding: 0.5em;
-    border: 1px solid var(--primary-color);
+    border: 1.5px solid black;
     border-radius: 4px;
     font-family: "Open Sans", sans-serif;
     width: 100%;
@@ -501,19 +502,11 @@ header .menu-toggler {
     transition: border-color 0.3s ease-in-out;
 
 }
-
-.contact-section form input[type="submit"] {
-    background-color: var(--primary-color);
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
+.contact-section form input:focus,
+.contact-section form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
 }
-
-.contact-section form input[type="submit"]:hover {
-    background-color: rgb(236, 37, 100);
-    transition: background-color 0.3s ease-in-out;
-}
-
 
 .contact-info {
     width: 48%;
@@ -634,6 +627,7 @@ footer .foot {
         min-width: 50%;
         border-radius: 0 0 8px 0;
         animation: show-nav 0.5s ease-in-out;
+        z-index: 1000;
     }
 
     header nav li {
