@@ -688,7 +688,6 @@ header .menu-toggler i {
 @media (max-width: 1000px) {
     header {
         padding: 1em 1em;
-        position: relative;
     }
 
     header .logo {
@@ -714,12 +713,11 @@ header .menu-toggler i {
         border-radius: 0 0 8px 0;
         animation: show-nav 0.5s ease-in-out;
         z-index: 1000;
-        padding: 1em;
     }
 
     header nav li {
         display: block;
-        padding: 1em 0;
+        padding: 1em;
     }
 
     @keyframes show-nav {
@@ -734,7 +732,7 @@ header .menu-toggler i {
 
     .hero-section {
         flex-direction: column;
-        padding: 0 1em;
+        padding: 2em 1em 0 1em;
         margin-right: 0;
     }
 
@@ -759,6 +757,10 @@ header .menu-toggler i {
 
 @media (max-width: 800px) {
     .whatsapp-btn {
+        display: none;
+    }
+
+    .bg-camera {
         display: none;
     }
 
