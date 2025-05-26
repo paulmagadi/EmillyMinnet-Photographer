@@ -17,6 +17,7 @@ html {
 body {
     background-color: rgb(230, 230, 230);
     font-family: "Open Sans", sans-serif;
+    position: relative;
 }
 
 .container {
@@ -608,12 +609,81 @@ footer .foot {
     text-align: center;
 }
 
-@media (max-width: 1100px) {
-    .profile-image img {
-        width: 80%;
-    }
+footer .foot p {
+    color: rgb(25, 25, 25);
+    font-size: 0.9rem;
+    margin-top: 1em;
 }
 
+
+header .menu-toggler {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+
+header .menu-toggler i {
+    font-size: 1.5rem;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+.scroll-to-top:hover {
+    background-color: rgb(236, 37, 100);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.scroll-to-top.show {
+    display: block;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.fade-in:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
 
 @media (max-width: 1000px) {
     header {
@@ -644,6 +714,7 @@ footer .foot {
         border-radius: 0 0 8px 0;
         animation: show-nav 0.5s ease-in-out;
         z-index: 1000;
+        padding: 1em;
     }
 
     header nav li {
@@ -726,8 +797,17 @@ footer .foot {
 }
 
 @media (max-width: 600px) {
+    header nav.show {
+        min-width: 70%;
+    }
+
     .services-container .service {
         width: 100%;
+    }
+
+    .footer-links-container {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        justify-content: space-between;
     }
 
 
@@ -748,8 +828,6 @@ footer .foot {
         margin: 3px;
     }
 
+    
 
-    .footer-links-container {
-        justify-content: space-between;
-    }
 }

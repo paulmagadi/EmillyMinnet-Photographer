@@ -6,10 +6,7 @@
 
 .colection-container {
     max-width: 1200px;
-    margin: 2rem 0;
-    background-color: rgb(230, 230, 230);
-    padding: 1em;
-    border-radius: 8px;
+    padding: 2rem 1em;
     background-color: rgb(212, 212, 212);
 }
 
@@ -31,14 +28,14 @@ h1 {
 .filter-btn {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: var(--light-color);
+    background-color: var(--bg-color);
     color: var(--dark-color);
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.3s ease;
     font-weight: 700;
     font-size: 1rem;
-    font-family: "Comic Neue", cursive;
+    font-family: "Jost", sans-serif;
 }
 
 .filter-btn:hover {
@@ -58,7 +55,7 @@ h1 {
     margin-bottom: 2rem;
     padding: 1em;
     border-radius: 6px;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 .gallery-item {
@@ -136,7 +133,7 @@ h1 {
 }
 
 .page-number:hover {
-    background-color: var(--light-color);
+    background-color: var(--bg-color);
 }
 
 .page-number.active {
